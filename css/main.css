@@ -1,0 +1,55 @@
+body{
+    background-color: #f7ecde;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.bookmark{
+    border-top: dotted 2px;
+    background: linear-gradient(to right,rgb(60,165,92),rgb(230,218,85));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+/* bookmark title with transition */
+.title{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    width: fit-content;
+    position: relative;
+    }
+    .title::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    z-index: -1;
+    background-color: #fec260;
+    transition: all 0.3s ease ;
+}
+.title:hover::before{
+    height: 60%;
+}
+.submit{
+    border-bottom: dotted 2px;
+}
+.box .content{
+    width: 35%;
+    height: 38vh;
+
+    i{
+        display: inline-block;
+    }
+    
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+input:focus{
+    border-color: #fec260 !important; 
+}
